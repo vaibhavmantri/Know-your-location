@@ -1,19 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src = "../js/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="../js/main.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="jumbotron text-center">
-        <h1>My First Bootstrap Page</h1>
-        <p>Resize this responsive page to see the effect!</p> 
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+    <div class="jumbotron">
+       <div class="jumbo"><h1>We want you secured</h1>
+        <h>Know more about us.</h></div> 
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Select the State you live in.</h1>
+          <select class="form-control form-control-lg">
+            <option>Select the State</option>
+            <option>Uttar Pradesh</option>
+          </select>
+        </div>
+        <div class="col-lg-6">
+          <h1>Select the City?</h1>
+          <!-- <button class="btn btn-primary btn-lg">House</button>
+          <button class="btn btn-primary btn-lg">Party/Function</button>
+          <button class="btn btn-primary btn-lg">Apartment</button>           -->
+          <select class="form-control form-control-lg">
+            <option>Select the City:</option>
+            <option>Kanpur(City)</option>
+            <option>Kanpur(Dehat)</option>
+          </select>
+          
+        </div>
       </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Select the Area</h1>
+          <select class="form-control form-control-lg">
+            <option>Select the Area</option>
+            <option>Azad Nagar</option>
+          </select>
+        </div>
+        <div class="col-lg-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161650.4402857795!2d80.23136909286463!3d26.455605537026514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1580082410318!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>        </div>
+      </div>
+    </div>
 </body>
+
 </html>
