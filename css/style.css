@@ -1,16 +1,3 @@
-/* .jumbotron{
-    background-image: url(../images/1st.jpg);
-    background-repeat: no-repeat;
-    height: 600px;
-} */
-/* .jumbo{
-    text-align: left;
-    margin-left: 100px;
-    margin-top: 200px;
-    background-color: ;
-    background-color: #ECF0F1;
-    margin-right: 60%;
-} */
 .img_2{
     background-image: url('../images/2nd.jpg');
       /* The image used */  
@@ -46,4 +33,8 @@ p,h1,h3,h2,h4,h5,a{
     border-bottom: 3px solid #E67E22;
     padding: 0px 0px 40px 00px;
     width: 100%;
+}
+.btn-warning:hover{
+    color:white;
+    text-decoration: none;
 }
