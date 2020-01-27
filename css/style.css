@@ -22,19 +22,49 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.img_3{
+    background-image: url('../images/3rd.jpg');
+      /* The image used */  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img_4{
+    background-image: url('../images/4th.jpg');
+    min-height: 500px; 
+    width: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 p,h1,h3,h2,h4,h5,a{
     font-family: 'Source Sans Pro', sans-serif;
-}
-#map{width: 100%;
-   height: 400px;
-   background-color: grey;
 }
 .row{
     border-bottom: 3px solid #E67E22;
     padding: 0px 0px 40px 00px;
     width: 100%;
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .btn-warning:hover{
     color:white;
     text-decoration: none;
+}
+footer{
+    background-color: #2E4053;
+    color: white;
+    border-bottom: 0px solid #2E4053;
+}
+.col-md-4 img{
+    width: 100%;
 }
