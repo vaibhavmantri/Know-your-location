@@ -45,7 +45,23 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-p,h1,h3,h2,h4,h5,a{
+.jumbotron{
+    background-image: url('../images/5th.jpg');
+    min-height: 800px; 
+    width: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 10px;
+}
+h1,h3,h2,h4,h5,a{
     font-family: 'Source Sans Pro', sans-serif;
 }
 .row{
