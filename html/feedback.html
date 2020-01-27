@@ -2,33 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
-  <script src="../js/main.js"></script>
-  <link rel="stylesheet" href="../css/style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Plannings</a>
-        </li>
-        <!-- <li class="nav-item dropdown">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plannings</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Dropdown
@@ -41,46 +41,113 @@
           </div>
         </li>
       </ul> -->
-      <li class="nav-item">
-        <a href="" class="nav-link">Feedbacks</a>
-      </li>
-      <!-- <form class="form-inline my-2 my-lg-0" style="float: right;">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Feedbacks</a>
+                </li>
+                <!-- <form class="form-inline my-2 my-lg-0" style="float: right;">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form> -->
-    </div>
-  </nav>
-<div class="jumbotron">
-    <p>Feedbacks</p>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-8">
-            
         </div>
+    </nav>
+    <div class="jumbotron">
+        <p>Feedbacks</p>
     </div>
-</div>
-
-
-
-
-
-<footer>
     <div class="container">
-      <div class="row" style="border: 0px;">
-        <div class="col-lg-4">
-          <h3>Contact Us</h3>
+        <div class="row">
+            <div class="col-12">
+                <h1>User Feedbacks</h1>
+            </div>
         </div>
-        <div class="col-lg-4">
-          <h3>About Us</h3>
-        </div>
-        <div class="col-lg-4">
-          <h3>Development Team</h3>
-        </div>
-      </div>
     </div>
-  </footer>
-  <script src="../js/main.js"></script>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="border-right: 3px solid #2E86C1;">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputName1"><h2>First Name</h2></label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"><h2>E-Mail</h2></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">
+                            <h1>FeedBacks</h1>
+                        </label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"
+                            placeholder="Enter your feedbacks here."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputName2"><h2>Last Name</h2></label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your last name">
+                    </div>
+                    <h2>Select the Area</h2>
+                    <select class="form-control form-control-lg" id="area">
+                      <option>Select the Area</option>
+                      <option value="1">Azad Nagar</option>
+                      <option value="2">Kakadeo</option>
+                      <option value="3">Panki</option>
+                      <option value="4">Armapur</option>
+                      <option value="4">Panki</option>
+                      <option value="5">Awas Vikas</option>
+                      <option value="6">Rawatpur</option>
+                      <option value="7">Swaroop Nagar</option>
+                      <option value="8">Harsh Nagar</option>
+                      <option value="9">Permat</option>
+                      <option value="10">Kalyanpur</option>
+                      <option value="11">Naubasta</option>
+                      <option value="12">Cantt</option>
+                      <option value="13">Kidwai Nagar</option>
+                      <option value="14">Jajmau</option>
+                      <option value="15">General Ganj</option>
+                      <option value="16">Yashoda Nagar</option>
+                      <option value="17">Govind Nagar</option>
+                      <option value="18">Nawab Ganj</option>
+                      <option value="19">Shukla Ganj</option>
+                    </select>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">
+                            <h1>Enter Photos here.</h1>
+                        </label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </form>
+                <button class="btn btn-outline-success btn-lg"><h2>Submit</h2></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<br><br>
+    <footer>
+        <div class="container">
+            <div class="row" style="border: 0px;">
+                <div class="col-lg-4">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="col-lg-4">
+                    <h3>About Us</h3>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Development Team</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
 </body>
+
 </html>
