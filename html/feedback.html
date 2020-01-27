@@ -56,40 +56,43 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>User Feedbacks</h1>
+                <p>User Feedbacks</p>
+            </div>
+            <div class="col-12">
+
             </div>
         </div>
     </div>
     <br><br>
     <div class="container">
         <div class="row">
-            <div class="col-md-6" style="border-right: 3px solid #2E86C1;">
+            <div class="col-md-6" style="border-right: 3px solid #2E86C1; border-left: 3px solid #2E86C1;">
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputName1"><h2>First Name</h2></label>
-                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter your first name">
+                        <label for="InputName1"><h2>First Name</h2></label>
+                        <input type="text" class="form-control" id="InputName1" placeholder="Enter your first name">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1"><h2>E-Mail</h2></label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <label for="InputEmail1"><h2>E-Mail</h2></label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
                             placeholder="Enter email">
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                             else.</small> -->
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">
+                        <label for="FormControlTextarea1">
                             <h1>FeedBacks</h1>
                         </label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"
+                        <textarea class="form-control" id="FormControlTextarea1" rows="9"
                             placeholder="Enter your feedbacks here."></textarea>
                     </div>
                 </form>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" style="border-right: 3px solid #2E86C1; border-left: 3px solid #2E86C1;">
                 <form>
                     <div class="form-group">
                         <label for="exampleInputName2"><h2>Last Name</h2></label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter your last name">
+                        <input type="text" class="form-control" id="InputName2" placeholder="Enter your last name">
                     </div>
                     <h2>Select the Area</h2>
                     <select class="form-control form-control-lg" id="area">
@@ -117,13 +120,13 @@
                     </select>
                     <br>
                     <div class="form-group">
-                        <label for="exampleFormControlFile1">
+                        <label for="FormControlFile1">
                             <h1>Enter Photos here.</h1>
                         </label>
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <input type="file" class="form-control-file" id="FormControlFile1">
                     </div>
                 </form>
-                <button class="btn btn-outline-success btn-lg"><h2>Submit</h2></button>
+                <button class="btn btn-outline-success btn-lg" onclick="feedbacks()"><h2>Submit</h2></button>
             </div>
         </div>
     </div>
@@ -147,7 +150,7 @@
             </div>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <script src="../js/feedback.js"></script>
 </body>
 
 </html>
