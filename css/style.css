@@ -1,19 +1,49 @@
-.jumbotron{
+/* .jumbotron{
     background-image: url(../images/1st.jpg);
     background-repeat: no-repeat;
     height: 600px;
-}
-.jumbo{
+} */
+/* .jumbo{
     text-align: left;
     margin-left: 100px;
     margin-top: 200px;
     background-color: ;
     background-color: #ECF0F1;
     margin-right: 60%;
+} */
+.img_2{
+    background-image: url('../images/2nd.jpg');
+      /* The image used */  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img_1{
+    background-image: url("../images/1st.jpg");
+      /* The image used */  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 p,h1,h3,h2,h4,h5,a{
     font-family: 'Source Sans Pro', sans-serif;
 }
 #map{width: 100%;
    height: 400px;
-   background-color: grey;}
+   background-color: grey;
+}
+.row{
+    border-bottom: 3px solid #E67E22;
+    padding: 0px 0px 40px 00px;
+    width: 100%;
+}
