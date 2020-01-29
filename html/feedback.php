@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Plannings</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul> -->
+                <li class="nav-item">
+                    <a href="" class="nav-link">Feedbacks</a>
+                </li>
+                <!-- <form class="form-inline my-2 my-lg-0" style="float: right;">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <p>Feedbacks</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>User Feedbacks</p>
+            </div>
+            <div class="col-12">
+
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>Give Feedbacks</p>
+            </div>
+            <div class="col-md-6" style="border-right: 3px solid #2E86C1; border-left: 3px solid #2E86C1;">
+                <form action="connect.php" method="POST">
+                    <div class="form-group">
+                        <label for="InputName1"><h2>First Name</h2></label>
+                        <input type="text" class="form-control" id="InputName1" placeholder="Enter your first name" name = "firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="InputEmail1"><h2>E-Mail</h2></label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email" name = "email">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="FormControlTextarea1">
+                            <h1>FeedBacks</h1>
+                        </label>
+                        <textarea class="form-control" id="FormControlTextarea1" rows="9"
+                            placeholder="Enter your feedbacks here."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6" style="border-right: 3px solid #2E86C1; border-left: 3px solid #2E86C1;">
+                <form action="connect.php" method="POST">
+                    <div class="form-group">
+                        <label for="exampleInputName2"><h2>Last Name</h2></label>
+                        <input type="text" class="form-control" id="InputName2" placeholder="Enter your last name" name="lastname">
+                    </div>
+                    <h2>Select the Area</h2>
+                    <select class="form-control form-control-lg" id="area">
+                      <option>Select the Area</option>
+                      <option value="1" name = "area">Azad Nagar</option>
+                      <option value="2" name = "area">Kakadeo</option>
+                      <option value="3" name = "area">Panki</option>
+                      <option value="4" name = "area">Armapur</option>
+                      <option value="4" name = "area">Panki</option>
+                      <option value="5" name = "area">Awas Vikas</option>
+                      <option value="6" name = "area">Rawatpur</option>
+                      <option value="7" name = "area">Swaroop Nagar</option>
+                      <option value="8" name = "area">Harsh Nagar</option>
+                      <option value="9" name = "area">Permat</option>
+                      <option value="10" name = "area">Kalyanpur</option>
+                      <option value="11" name = "area">Naubasta</option>
+                      <option value="12" name = "area">Cantt</option>
+                      <option value="13" name = "area">Kidwai Nagar</option>
+                      <option value="14" name = "area">Jajmau</option>
+                      <option value="15" name =  "area">General Ganj</option>
+                      <option value="16" name = "area">Yashoda Nagar</option>
+                      <option value="17" name = "area">Govind Nagar</option>
+                      <option value="18" name = "area">Nawab Ganj</option>
+                      <option value="19" name = "area">Shukla Ganj</option>
+                    </select>
+                    <br>
+                    <div class="form-group">
+                        <label for="FormControlFile1">
+                            <h1>Enter Photos here.</h1>
+                        </label>
+                        <input type="file" class="form-control-file" id="FormControlFile1">
+                    </div>
+                    <input type="submit" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<br><br>
+    <footer>
+        <div class="container">
+            <div class="row" style="border: 0px;">
+                <div class="col-lg-4">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="col-lg-4">
+                    <h3>About Us</h3>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Development Team</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/feedback.js"></script>
+</body>
+
+</html>
