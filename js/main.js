@@ -57,3 +57,25 @@ function getLocation() {
     document.getElementById("location").src = url;
     console.log(url);
   }
+  //////////////////////////////Chart////////////////////
+  google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart(locale,avail,trans,society,market) {
+
+  var data = google.visualization.arrayToDataTable([
+    ['Features', 'Percentage'],
+    ['Locality',     locale],
+    ['Availability',    avail],
+    ['Transportation',  trans],
+    ['Society', society],
+    ['Market',    market]
+  ]);
+
+  var options = {
+    title: 'Worth by Utilities'
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+  chart.draw(data, options);
+}
