@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
 
@@ -26,26 +29,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Plannings</a>
         </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul> -->
       <li class="nav-item">
         <a href="feedback.php" class="nav-link">Feedbacks</a>
       </li>
-      <!-- <form class="form-inline my-2 my-lg-0" style="float: right;">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
     </div>
   </nav>
   <div class="img_1">
@@ -140,10 +126,9 @@
     <div class="row">
       <div class="col-lg-6" style="text-align: center;">
         <h1>Check certain ways to keep yourself safe.</h1>
-        <button class="btn btn-primary btn-lg">
-          <h1>Click Here</h1>
-        </button>
-      </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+          Open modal
+        </button>      </div>
       <div class="col-lg-6">
         <h1>Read certain Blogs</h1>
       </div>
@@ -155,22 +140,22 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img src="../images/vaibhav.jpeg" alt="">
+        <img src="./images/vaibhav.jpeg" alt="">
         <h3>Vaibhav Mantri</h3>
       </div>
       <div class="col-md-4">
-        <img src="../images/tanvi.jpg" alt="">
+        <img src="./images/tanvi.jpg" alt="">
         <h3>Tanvi Gupta</h3>
       </div>
       <div class="col-md-4">
-        <img src="../images/yoel.jpg" alt="">
+        <img src="./images/yoel.jpg" alt="">
         <h3>Yoel William</h3>
       </div>
     </div>
     <br><br>
     <div class="row">
       <div class="col-md-4">
-        <img src="../images/sneha.jpg" alt="">
+        <img src="./images/sneha.jpg" alt="">
         <h3>Sneha Shukla</h3>
       </div>
       <div class="col-md-4">
@@ -200,7 +185,32 @@
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

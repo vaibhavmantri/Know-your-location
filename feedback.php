@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
-    <script src="../js/main.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -64,21 +63,25 @@
         </div>
     </div>
     <br><br>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <p>Give Feedbacks</p>
-            </div>
-            <div class="col-md-6" style="border-right: 3px solid #2E86C1; border-left: 3px solid #2E86C1;">
-                <form action="connect.php" method="POST">
+    <form action="connect.php" method="POST">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Give Feedbacks</p>
+                </div>
+                <div class="col-md-6" style="border-right: 3px solid #2E86C1; border-left: 3px solid #2E86C1;">
+
                     <div class="form-group">
-                        <label for="InputName1"><h2>First Name</h2></label>
-                        <input type="text" class="form-control" id="InputName1" placeholder="Enter your first name" name = "firstname">
+                        <label for="InputName1">
+                            <h2>First Name</h2>
+                        </label>
+                        <input type="text" class="form-control" id="InputName1" placeholder="Enter your first name" name="firstname">
                     </div>
                     <div class="form-group">
-                        <label for="InputEmail1"><h2>E-Mail</h2></label>
-                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email" name = "email">
+                        <label for="InputEmail1">
+                            <h2>E-Mail</h2>
+                        </label>
+                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
                         <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                             else.</small> -->
                     </div>
@@ -86,40 +89,41 @@
                         <label for="FormControlTextarea1">
                             <h1>FeedBacks</h1>
                         </label>
-                        <textarea class="form-control" id="FormControlTextarea1" rows="9"
-                            placeholder="Enter your feedbacks here."></textarea>
+                        <textarea name="feedback" class="form-control" id="FormControlTextarea1" rows="9" placeholder="Enter your feedbacks here."></textarea>
                     </div>
-                </form>
-            </div>
-            <div class="col-md-6" style="border-right: 3px solid #2E86C1; border-left: 3px solid #2E86C1;">
-                <form action="connect.php" method="POST">
+
+                </div>
+                <div class="col-md-6" style="border-right: 3px solid #2E86C1; border-left: 3px solid #2E86C1;">
+
                     <div class="form-group">
-                        <label for="exampleInputName2"><h2>Last Name</h2></label>
+                        <label for="exampleInputName2">
+                            <h2>Last Name</h2>
+                        </label>
                         <input type="text" class="form-control" id="InputName2" placeholder="Enter your last name" name="lastname">
                     </div>
                     <h2>Select the Area</h2>
-                    <select class="form-control form-control-lg" id="area">
-                      <option>Select the Area</option>
-                      <option value="1" name = "area">Azad Nagar</option>
-                      <option value="2" name = "area">Kakadeo</option>
-                      <option value="3" name = "area">Panki</option>
-                      <option value="4" name = "area">Armapur</option>
-                      <option value="4" name = "area">Panki</option>
-                      <option value="5" name = "area">Awas Vikas</option>
-                      <option value="6" name = "area">Rawatpur</option>
-                      <option value="7" name = "area">Swaroop Nagar</option>
-                      <option value="8" name = "area">Harsh Nagar</option>
-                      <option value="9" name = "area">Permat</option>
-                      <option value="10" name = "area">Kalyanpur</option>
-                      <option value="11" name = "area">Naubasta</option>
-                      <option value="12" name = "area">Cantt</option>
-                      <option value="13" name = "area">Kidwai Nagar</option>
-                      <option value="14" name = "area">Jajmau</option>
-                      <option value="15" name =  "area">General Ganj</option>
-                      <option value="16" name = "area">Yashoda Nagar</option>
-                      <option value="17" name = "area">Govind Nagar</option>
-                      <option value="18" name = "area">Nawab Ganj</option>
-                      <option value="19" name = "area">Shukla Ganj</option>
+                    <select class="form-control form-control-lg" name="area" id="area">
+                        <option>Select the Area</option>
+                        <option value="1">Azad Nagar</option>
+                        <option value="2">Kakadeo</option>
+                        <option value="3">Panki</option>
+                        <option value="4">Armapur</option>
+                        <option value="4">Panki</option>
+                        <option value="5">Awas Vikas</option>
+                        <option value="6">Rawatpur</option>
+                        <option value="7">Swaroop Nagar</option>
+                        <option value="8">Harsh Nagar</option>
+                        <option value="9">Permat</option>
+                        <option value="10">Kalyanpur</option>
+                        <option value="11">Naubasta</option>
+                        <option value="12">Cantt</option>
+                        <option value="13">Kidwai Nagar</option>
+                        <option value="14">Jajmau</option>
+                        <option value="15">General Ganj</option>
+                        <option value="16">Yashoda Nagar</option>
+                        <option value="17">Govind Nagar</option>
+                        <option value="18">Nawab Ganj</option>
+                        <option value="19">Shukla Ganj</option>
                     </select>
                     <br>
                     <div class="form-group">
@@ -129,15 +133,15 @@
                         <input type="file" class="form-control-file" id="FormControlFile1">
                     </div>
                     <input type="submit" class="btn btn-primary">
-                </form>
+
+                </div>
             </div>
         </div>
-    </div>
+    </form>
 
 
 
-
-<br><br>
+    <br><br>
     <footer>
         <div class="container">
             <div class="row" style="border: 0px;">
@@ -153,13 +157,7 @@
             </div>
         </div>
     </footer>
-    <script src="../js/feedback.js"></script>
+    <script src="./js/feedback.js"></script>
 </body>
 
 </html>
-<?php
-function pre_r( $array){
-    echp '<pre>';
-        print_r($array);
-        echo '</pre>';
-}
