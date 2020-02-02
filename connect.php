@@ -1,4 +1,5 @@
 <?php
+require_once("config.php");
 var_dump($_POST);
 $firstName = $_POST['firstname'];
 $lastName = $_POST['lastname'];
@@ -28,7 +29,7 @@ $areaArray = [
     "Shukla Ganj"
 ];
 ///Database Connection
-$con = new mysqli('localhost', 'root', '', 'vaibhav');
+$con = new mysqli($host, $user, $pass, $db);
 function sS($txt) {
     global  $con;
     return $con -> real_escape_string($txt);

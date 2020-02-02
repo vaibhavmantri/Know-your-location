@@ -15,7 +15,9 @@
     
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
-      <a class="navbar-brand" href="index.html">Home</a>
+      <ul class="navbar-brand disabled" href="#" style="width: 10%; margin: 0 0 0 0;">
+        <img src="./images/logo.png" alt="" width="60%">
+      </ul>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,14 +25,17 @@
   
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Planning <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="feedback.php">Feedback</a>
+            <a class="nav-link" href="index.html"><h2>Home</h2> <span class="sr-only">(current)</span></a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="planning.html"><h2>Plannings</h2></a>
+          </li>
+        <li class="nav-item">
+          <a href="feedback.php" class="nav-link"><h2>Feedback</h2></a>
+        </li>
+      </div>
     </nav>
-
     <div class="container">
         <!-- row for state -->
         <div class="row">
