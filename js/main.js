@@ -64,9 +64,8 @@ function showPosition(position) {
     document.getElementById("demo1").innerHTML = "Latitude: " + position.coords.latitude +
         "<br>Longitude: " + position.coords.longitude;
     loc = "http://www.google.com/maps/place/" + position.coords.latitude + "," + position.coords.longitude;
-    var url = loc.replace("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161650.4402857795!2d80.23136909286463!3d26.455605537026514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1580082410318!5m2!1sen!2sin", loc);
-    document.getElementById("location").src = url;
-    console.log(url);
+    document.getElementById("location").src = loc;
+    console.log(loc);
 }
 //////////////////////////////Chart////////////////////
 google.charts.load('current', { 'packages': ['corechart'] });
