@@ -52,93 +52,94 @@
   <div class="container">
     <!-- row for state -->
     <div class="row">
-      <div class="col-lg-6">
-        <h1>Select the State you live in.</h1>
-        <select class="form-control form-control-lg">
-          <option>Select the State</option>
-          <option>Uttar Pradesh</option>
-        </select>
-      </div>
+        <div class="col-lg-6">
+            <h1>Select the State you live in.</h1>
+            <select class="form-control form-control-lg">
+              <option>Select the State</option>
+              <option>Uttar Pradesh</option>
+            </select>
+        </div> 
 
-      <div class="col-lg-6">
-        <h1>Select the City?</h1>
-        <select class="form-control form-control-lg">
-          <option>Select the City:</option>
-          <option>Kanpur(City)</option>
-          <option>Kanpur(Dehat)</option>
-        </select>
-
-      </div>
+        <div class="col-lg-6">
+            <h1>Select the City?</h1>
+            <select class="form-control form-control-lg">
+              <option>Select the City:</option>
+              <option>Kanpur(City)</option>
+              <option>Kanpur(Dehat)</option>
+            </select>
+    
+        </div>
 
     </div>
     <!-- row for state ends -->
     <br>
     <div class="row">
-      <div class="col-lg-6" style="margin-top: 10%;">
-        <h1>Select the Area</h1>
-        <select class="form-control form-control-lg" id="area">
-          <option>Select the Area</option>
-          <option value="1">Azad Nagar</option>
-          <option value="2">Kakadeo</option>
-          <option value="3">Panki</option>
-          <option value="4">Armapur</option>
-          <option value="4">Panki</option>
-          <option value="5">Awas Vikas</option>
-          <option value="6">Rawatpur</option>
-          <option value="7">Swaroop Nagar</option>
-          <option value="8">Harsh Nagar</option>
-          <option value="9">Permat</option>
-          <option value="10">Kalyanpur</option>
-          <option value="11">Naubasta</option>
-          <option value="12">Cantt</option>
-          <option value="13">Kidwai Nagar</option>
-          <option value="14">Jajmau</option>
-          <option value="15">General Ganj</option>
-          <option value="16">Yashoda Nagar</option>
-          <option value="17">Govind Nagar</option>
-          <option value="18">Nawab Ganj</option>
-          <option value="19">Shukla Ganj</option>
-        </select>
-        <br>
-        <button class="btn btn-info" onclick="look()">Look Up!</button>
+        <div class="col-lg-6" style="margin-top: 10%;">
+          <h1>Select the Area</h1>
+          <select class="form-control form-control-lg" id="area">
+            <option>Select the Area</option>
+            <option value="1">Azad Nagar</option>
+            <option value="2">Kakadeo</option>
+            <option value="3">Panki</option>
+            <option value="4">Armapur</option>
+            <option value="4">Panki</option>
+            <option value="5">Awas Vikas</option>
+            <option value="6">Rawatpur</option>
+            <option value="7">Swaroop Nagar</option>
+            <option value="8">Harsh Nagar</option>
+            <option value="9">Permat</option>
+            <option value="10">Kalyanpur</option>
+            <option value="11">Naubasta</option>
+            <option value="12">Cantt</option>
+            <option value="13">Kidwai Nagar</option>
+            <option value="14">Jajmau</option>
+            <option value="15">General Ganj</option>
+            <option value="16">Yashoda Nagar</option>
+            <option value="17">Govind Nagar</option>
+            <option value="18">Nawab Ganj</option>
+            <option value="19">Shukla Ganj</option>
+          </select>
+          <br>
+          <button class="btn btn-info" onclick="look()">Look Up!</button>
+        </div>
+        <div class="col-lg-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161650.4402857795!2d80.23136909286463!3d26.455605537026514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1580082410318!5m2!1sen!2sin"
+              width="300" height="400" frameborder="0" style="border:0;" allowfullscreen="" id="google_map"></iframe>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-6">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161650.4402857795!2d80.23136909286463!3d26.455605537026514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4770b127c46f%3A0x1778302a9fbe7b41!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1580082410318!5m2!1sen!2sin"
-          width="300" height="400" frameborder="0" style="border:0;" allowfullscreen="" id="google_map"></iframe>
-      </div>
+      <br><br>
+
+    <br>
+    <!-- row for buttons -->
+    <div class="row">
+        <div class="col-md-6" id="btns">
+            <h2>Select the Category to Search?</h2>
+            <br>
+
+            <button type="button" onclick = "utility(1)" class="btn btn-success">Appartment</button>
+        
+            <button type="button" onclick="utility(2)" class="btn btn-primary">House</button>
+        
+        
+            <button type="button" onclick="utility(3)" class="btn btn-warning">Plot</button>
+        
+        
+            <button type="button" onclick="utility(4)" class="btn btn-danger">Shop</button>
+            <button class="btn btn-danger" onclick = "graph()"> Look Up</button>
+        </div>  
+        <div class="col-md-6">
+          
+            <h2>Graph</h2>
+            <div id="piechart" style="width: 100%;height: auto; float: left;"></div>
+        </div>
     </div>
-  </div>
-  <br><br>
+    <!-- row for buttons end -->
 
-  <br>
-  <!-- row for buttons -->
-  <div class="row">
-    <div class="col-md-6" id="btns">
-      <h2>Select the Category to Search?</h2>
-      <br>
-
-      <button type="button" onclick="drawChart(8,5,8,6,6)" class="btn btn-success">Appartment</button>
-      <!-- <canvas id="pieChart"></canvas> -->
-
-      <button type="button" onclick="drawChart(8,8,8,8,12)" class="btn btn-primary">House</button>
-
-
-      <button type="button" onclick="drawChart(10,8,9,7,10)" class="btn btn-warning">Plot</button>
-
-
-      <button type="button" onclick="drawChart(8,8,8,8,12)" class="btn btn-danger">Shop</button>
-    </div>
-    <div class="col-md-6">
-
-      <h2>Graph</h2>
-      <div id="piechart" style="width: 100%;"></div>
-    </div>
-  </div>
-  <!-- row for buttons end -->
-
-  </div>
-  <script src="./js/main.js"></script>
+</div>
+<script src="../js/main.js"></script>
+<script src="./js/planning.js"></script>
 </body>
 
 </html>

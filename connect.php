@@ -30,21 +30,22 @@ $areaArray = [
 ];
 ///Database Connection
 $con = new mysqli($host, $user, $pass, $db);
-function sS($txt) {
+function sS($txt)
+{
     global  $con;
-    return $con -> real_escape_string($txt);
+    return $con->real_escape_string($txt);
 }
 if ($con->connect_error) {
     die('Connection failed : ' . $con->connect_error);
 } else {
     $firstName = sS($firstName);
     $lastName = sS($lastName);
-$email = sS($email);
-$area = sS($areaArray[intval($_POST['area'])-1]);
-$feedback = sS($feedback);
+    $email = sS($email);
+    $area = sS($areaArray[intval($_POST['area']) - 1]);
+    $feedback = sS($feedback);
     $con->query("insert into registration(firstName,lastName,email,area,feedback)value('$firstName','$lastName','$email','$area', '$feedback')");
-    // echo $con->error;
+    echo $con->error;
     $con->close();
-  
+
     echo  "Your form has been submitted successfully.";
 }
