@@ -48,6 +48,12 @@
         <div class="row">
             <div class="col-12">
                 <p>User Feedbacks</p>
+                <div>
+                    <h3 style="font-weight:bold;">Yeol William</h3>
+                    <h5>yoelwilliam54321@gmail.com</h5>
+                    <h3>Feedback :</h3>
+                    <h4>most useful app, has all the information you need in order to be sure that where to invest your money and where not.</h4>
+                </div>
             </div>
             <div class="col-12">
 
