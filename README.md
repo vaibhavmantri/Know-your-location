@@ -8,4 +8,4 @@ You can get the probabilities in form of graph.<h3>
 <h3>On the third page we are available to have your feedback on different places.<br>
 
 <h2>The link is attached here with:-<br>
-<h1>https://asylum953124.000webhostapp.com/index.html
+<h3>https://vaibhavmantri1.github.io/Know-your-location/
